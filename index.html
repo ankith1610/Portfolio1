@@ -6,118 +6,318 @@
     <title>Ankith Pissay | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dark-mode">
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
     <nav>
         <div class="nav-container">
+            <div class="logo">AP</div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <ul class="nav-links">
-                <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#skills" class="nav-link"><i class="fas fa-tools"></i> Skills</a></li>
-                <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
-                <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
-                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
-        <section id="home" class="section">
+        <section id="hero" class="section">
             <div class="hero-content">
-                <h1>Hello, I'm Ankith Pissay</h1>
-                <p>Web Developer</p>
-                <a href="#contact" class="cta-button">Get in Touch</a>
+                <div class="hero-text">
+                    <h1 class="glitch" data-text="Ankith Pissay">Ankith Pissay</h1>
+                    <p class="subtitle">AI & Cloud Tech Explorer | Full-Stack Developer </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="cta-button">Get in Touch</a>
+                        <a href="#projects" class="cta-button secondary">View Projects</a>
+                    </div>
+                </div>
+                <!-- <div class="hero-image">
+                    <div class="shape"></div>
+                </div> -->
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="scroll-arrow"></div>
             </div>
         </section>
 
         <section id="about" class="section">
             <div class="section-container">
-                <h2>About Me</h2>
-                <p>I'm Ankith Pissay, a B.Tech student specializing in Artificial Intelligence and Machine Learning at SRKR Engineering College. My passion lies in crafting innovative solutions using AI and modern web technologies. As a member of the Coding Club, I help organize workshops to foster technical skills among students.</p>
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm Ankith Pissay, a B.Tech student with a keen interest in building intelligent, scalable, and user-centric digital solutions. With a strong foundation in Artificial Intelligence and a growing passion for web technologies, I specialize in blending AI, cloud, and development skills to solve real-world problems.</p>
+                        <p>My experience includes hands-on work with AWS during internships and projects, where I configured secure web servers and implemented IAM-based access controls. I’ve also built responsive web applications using HTML, CSS, JavaScript, and AngularJS, and explored low-code/no-code platforms. As a freelance WordPress developer, I completed a yoga website project that combined functionality with a clean design tailored to client needs.</p>
+                        <p>As the Executive Lead and Alumni Relations Coordinator of the SRKR Coding Club, I guide all other leads and shape the club's strategic direction. I organize technical events, promote coding culture, and connect with alumni to bring mentorship and career insights to the student community.</p>
+                    </div>
+                    
+                </div>
             </div>
         </section>
 
-        <section id="skills" class="section">
+        <section id="resume" class="section">
             <div class="section-container">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-card"><i class="fab fa-html5"></i> HTML</div>
-                    <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS</div>
-                    <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
-                    <div class="skill-card"><i class="fas fa-paint-brush"></i> UI/UX</div>
-                    <div class="skill-card"><i class="fab fa-python"></i> Python</div>
+                <h2 class="section-title">Resume</h2>
+                <div class="resume-content">
+                    <div class="resume-column">
+                        <div class="resume-section">
+                            <h3>Education</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>B.Tech in AI & Machine Learning</h4>
+                                        <p class="timeline-place">SRKR Engineering College</p>
+                                        <p class="timeline-date">2022 – 2026</p>
+                                        <p>GPA: 8.38/10.0</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>Intermediate (PMC)</h4>
+                                        <p class="timeline-place">Vignana Bharathi Junior College</p>
+                                        <p class="timeline-date">2020 – 2022</p>
+                                        <p>Percentage: 91.7</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>Secondary Education</h4>
+                                        <p class="timeline-place">St.Ann's School</p>
+                                        <p class="timeline-date">2019 – 2020</p>
+                                        <p>Percentage: 83</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-column">
+                        <div class="resume-section">
+                            <h3>Experience</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>Cloud Virtual Internship</h4>
+                                        <p class="timeline-place">National Internship Portal (AICTE, EduSkills)</p>
+                                        <p class="timeline-date">July 2024 - September 2024</p>
+                                        <ul>
+                                            <li>Completed a 10-week internship focused on AWS cloud technologies</li>
+                                            <li>Gained hands-on experience in cloud computing, including EC2, S3, VPC, IAM, and security best practices</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4>Cloud Practitioner</h4>
+                                        <p class="timeline-place">NIELIT (Remote)</p>
+                                        <p class="timeline-date">May 2024 – July 2024</p>
+                                        <ul>
+                                            <li>Deployed a secure web server on AWS EC2 within a custom VPC</li>
+                                            <li>Configured IAM roles for enhanced security and set up Nginx for web hosting with restricted SSH access</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-content">
+                    <div class="resume-column">
+                        <div class="resume-section">
+                            <h3>Certifications</h3>
+                            <ul class="cert-list">
+                                <li>Cisco Networking Academy – Introduction to Cybersecurity</li>
+                                <li>Career Launchpad Cloud Engineer Track - by Google Cloud Learning Services</li>
+                                <li>NPTEL - Programming in Java</li>
+                                <li>Cloud Computing Foundations - by AWS Academy</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="resume-column">
+                        <div class="resume-section">
+                            <h3>Achievements & Leadership</h3>
+                            <ul class="achievement-list">
+                                <li>Successfully submitted a project for the national-level Smart India Hackathon (SIH)</li>
+                                <li>Member, Coding Club, SRKR Engineering College</li>
+                                <li>Actively participated in organizing coding events and workshops for students</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-download">
+                    <a href="#" class="download-button">Download Full Resume <i class="fas fa-download"></i></a>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="section">
             <div class="section-container">
-                <h2>Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>Snake and Ladders Game</h3>
-                        <p>A web-based game with multiplayer support, built with HTML5 Canvas and JavaScript.</p>
-                        <div class="project-tags">
-                            <!-- <span>HTML5</span>
-                            <span>JavaScript</span> -->
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-wrapper">
+                    <div class="projects-scroll">
+                        <div class="project-card featured">
+                            <div class="project-image">
+                                <img src="/placeholder.svg?height=300&width=500" alt="Snake and Ladders Game">
+                                <div class="project-overlay">
+                                    <a href="#" class="project-link">View Demo</a>
+                                    <a href="#" class="project-link">View Code</a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Snake and Ladders Game</h3>
+                                <p>A fully functional web-based Snake and Ladders game with multiplayer support, custom board designs, and interactive animations. Built with HTML5 Canvas, CSS3, and vanilla JavaScript.</p>
+                                <div class="project-tags">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>Canvas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="/placeholder.svg?height=300&width=500" alt="Alumni Connect Website">
+                                <div class="project-overlay">
+                                    <a href="#" class="project-link">View Demo</a>
+                                    <a href="#" class="project-link">View Code</a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Alumni Connect Website</h3>
+                                <p>Contributed to UI/UX design by providing suggestions and feedback. Assisted in testing the website to ensure smooth functionality and user experience.</p>
+                                <div class="project-tags">
+                                    <span>UI/UX</span>
+                                    <span>Testing</span>
+                                    <span>Web Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="/placeholder.svg?height=300&width=500" alt="Secure Web Server Deployment">
+                                <div class="project-overlay">
+                                    <a href="#" class="project-link">View Demo</a>
+                                    <a href="#" class="project-link">View Code</a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Secure Web Server Deployment on AWS</h3>
+                                <p>Deployed a secure web server on AWS EC2 within a custom VPC, configured IAM roles for enhanced security, and set up Nginx for web hosting with restricted SSH access.</p>
+                                <div class="project-tags">
+                                    <span>AWS</span>
+                                    <span>EC2</span>
+                                    <span>VPC</span>
+                                    <span>IAM</span>
+                                    <span>Nginx</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <h3>Alumni Connect Website</h3>
-                        <p>Contributed to UI/UX design and testing for a college alumni platform.</p>
-                        <div class="project-tags">
-                            <!-- <span>UI/UX</span>
-                            <span>Testing</span> -->
+                    <div class="scroll-controls">
+                        <button class="scroll-btn prev"><i class="fas fa-chevron-left"></i></button>
+                        <div class="scroll-indicator-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
                         </div>
+                        <button class="scroll-btn next"><i class="fas fa-chevron-right"></i></button>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="section">
-            <div class="section-container">
-                <h2>Education</h2>
-                <div class="timeline-item">
-                    <h3>B.Tech in AI & Machine Learning</h3>
-                    <p>SRKR Engineering College, 2022 – 2026</p>
-                    <p>GPA: 8.38/10.0</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Intermediate (PMC)</h3>
-                    <p>Vignana Bharathi Junior College, 2020 – 2022</p>
-                    <p>Percentage: 91.7</p>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="section">
             <div class="section-container">
-                <h2>Contact Me</h2>
+                <h2 class="section-title">Contact Me</h2>
                 <div class="contact-content">
                     <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i> Chirala, Andhra Pradesh, India</p>
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:ankith@example.com">ankith@example.com</a></p>
-                        <p><i class="fas fa-phone"></i> <a href="tel:+919100579797">+91 9100579797</a></p>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Chirala, Andhra Pradesh, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:ankithpissay16@gmail.com">ankithpissay16@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p><a href="tel:+919100579797">+91 9100579797</a></p>
+                            </div>
+                        </div>
                         <div class="social-links">
-                            <a href="https://linkedin.com/in/ankith-pissay" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/ankith1610" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/ankith-pissay" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/ankith1610" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                    <form id="contact-form">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <input type="text" name="subject" placeholder="Subject" required>
-                        <textarea name="message" placeholder="Your Message" required></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Your Name</label>
+                                <div class="line"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Your Email</label>
+                                <div class="line"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required>
+                                <label for="subject">Subject</label>
+                                <div class="line"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" required></textarea>
+                                <label for="message">Your Message</label>
+                                <div class="line"></div>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 Ankith Pissay. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>&copy; 2024 Ankith Pissay. All rights reserved.</p>
+            </div>
+            <!-- <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#resume">Resume</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div> -->
+        </div>
     </footer>
 
     <script src="script.js"></script>
